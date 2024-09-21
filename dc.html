@@ -1,0 +1,33 @@
+<html>
+<head>
+<style>
+#demo
+{
+border-radius: 15px;
+background-color: black;
+border-bottom: 2px solid red;
+color: red;
+width: 600px;
+height: 100px;
+font-weight: bold;
+font-size: 90px;
+padding: 50px;
+margin-top: 100px;
+}
+</style>
+</head>
+<body>
+<center> <h1> DIGITAL CLOCK </h1> 
+<hr color="red">
+<div id="demo">
+</center>
+<script>
+var myVar=setInterval(myTimer,1000);
+function myTimer()
+{
+var d=new Date();
+document.getElementById("demo").innerHTML=d.toLocaleTimeString();
+}
+</script>
+</body>
+</html>
